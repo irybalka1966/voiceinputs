@@ -1,5 +1,5 @@
 {
-  "name": "irybalka1966/VoiceInputs",
+  "name": "irybalka1966/voiceinputs",
   "description": "build text and select html form inputs with filling-from-voice ability",
   "minimum-stability": "stable",
   "license": "MIT",
@@ -21,8 +21,8 @@
   ],
   "autoload": {
     "psr-4": {
-      "irybalka1966\\VoiceInputs\\": "src/",
-      "irybalka1966\\VoiceInputs\\Tests\\": "tests/"
+      "irybalka1966\\voiceinputs\\": "src/",
+      "irybalka1966\\voiceinputs\\Tests\\": "tests/"
     }
   },
   "require-dev": {
