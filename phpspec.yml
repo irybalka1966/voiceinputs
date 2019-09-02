@@ -1,0 +1,4 @@
+suites:
+  morsecode_suite:
+      namespace: irybalka1966\VoiceInputs
+      psr4_prefix: irybalka1966\VoiceInputs

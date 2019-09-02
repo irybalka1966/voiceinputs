@@ -1,0 +1,31 @@
+{
+  "name": "irybalka1966/VoiceInputs",
+  "description": "build text and select html form inputs with filling-from-voice ability",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "keywords": [
+    "php",
+    "voice",
+    "htmlform",    
+    "textinput",
+    "selectinput",
+    "recognition",
+    "Chrome",
+    "webkitSpeechRecognition"
+  ],
+  "authors": [
+    {
+      "name": "Igor Rybalka",
+      "email": "irybalka@yahoo.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "irybalka1966\\VoiceInputs\\": "src/",
+      "irybalka1966\\VoiceInputs\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.7.17"
+  }
+}
