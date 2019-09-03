@@ -1,8 +1,7 @@
 {
   "name": "irybalka1966/voiceinputs",
   "description": "build text and select html form inputs with filling-from-voice ability",
-  "minimum-stability": "stable",
-  "prefer-stable":"true",
+  "minimum-stability": "dev",
   "license": "MIT",
   "keywords": [
     "php",
