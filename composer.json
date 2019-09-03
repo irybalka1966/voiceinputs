@@ -25,6 +25,10 @@
       "irybalka1966\\voiceinputs\\Tests\\": "tests/"
     }
   },
+  "require": {
+    "php": ">=5.4.0",
+    "irybalka1966/voiceinputs": "^1.0"
+},
   "require-dev": {
     "phpunit/phpunit": "5.7.17"
   }
