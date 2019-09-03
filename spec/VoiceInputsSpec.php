@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\irybalka1966\VoiceInputs;
+namespace spec\irybalka1966\voiceinputs;
 
 use PhpSpec\ObjectBehavior;
 use irybalka1966\VoiceInputs\VoiceInputs;
