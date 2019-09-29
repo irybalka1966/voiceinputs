@@ -1,7 +1,3 @@
-[![Build Status](https://travis-ci.org/johnnymast/morsecode.svg?branch=master)](https://travis-ci.org/johnnymast/morsecode)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/johnnymast/morsecode/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/johnnymast/morsecode/?branch=master)
-
-
 # VoiceInputs 
 
 This package allows you to build "text" and "select" html form inputs with "filling-from-voice" option, 
@@ -26,13 +22,13 @@ $voice = new VoiceInputs();
 <link rel="stylesheet" href="/css/voiceinputs.css">
 <form  ...>
     <label for="car-brand">Car brand:</label> 
-    <?=$voice->TextVoice('car-brand',['Toyota','Ferrari', 'BMW', 'Nissan'], 1, 1);?>
+    <?=$voice->TextVoice('car-brand',['Toyota','Ferrari', 'BMW', 'Nissan'], 1);?>
 
     <label for="year">Year:</label>
-    <?= $voice->SelectVoice('year',['2016', '2017', '2018', '2019'], 0, 2);?>
+    <?= $voice->SelectVoice('year',['2016', '2017', '2018', '2019'], 0);?>
 
     <label for="color">Color:</label>
-    <?= $voice->TextVoice('color',['yellow', 'black', 'white', 'red', 'blue'], 1, 3); ?>
+    <?= $voice->TextVoice('color',['yellow', 'black', 'white', 'red', 'blue'], 1); ?>
 
 </form>
 <script src="js/voiceinputs.js"></script>
@@ -51,7 +47,7 @@ $ composer require irybalka1966/VoiceInputs
 
 The following versions of PHP are supported by this version.
 
-+ PHP >= 5.6
++ PHP >= 7.0
 + HHVM
 
 
