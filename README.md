@@ -48,7 +48,7 @@ $ composer require irybalka1966/VoiceInputs
 
 The following versions of PHP are supported by this version.
 
-+ PHP >= 7.0
++ PHP >= 5.6
 + HHVM
 
 ## Development Requirements
