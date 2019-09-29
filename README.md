@@ -13,7 +13,9 @@ Voice recognition option works only for Chrome web-browser and SSL connection on
 
 ## Example of usage
 
-If you wish to put inputs with voice recognition into your form
+If you wish to put inputs with voice recognition into your html form, 
+for example car brands with a possible choice of Toyota, Ferrari et c.,
+year with a strict choice between 2016, 2017, etc. and colors:
 
 
 <?php
@@ -21,18 +23,19 @@ require '...\vendor\autoload.php';
 use irybalka1966\VoiceInputs\VoiceInputs;
 $voice = new VoiceInputs();
 ?>
-<form>
-    <label for="first-text-field">First:</label> 
-    <?=$voice->TextVoice('first-text-field',['hello','high', 'good day'], 1, 1);?>
+<link rel="stylesheet" href="/css/voiceinputs.css">
+<form  ...>
+    <label for="car-brand">Car brand:</label> 
+    <?=$voice->TextVoice('car-brand',['Toyota','Ferrari', 'BMW', 'Nissan'], 1, 1);?>
 
-    <label for="first-text-field">Second:</label>
-    <?= $voice->SelectVoice('second-text-field',['17', '9', '8'], 0, 2);?>
+    <label for="year">Year:</label>
+    <?= $voice->SelectVoice('year',['2016', '2017', '2018', '2019'], 0, 2);?>
 
-    <label for="first-text-field">Third:</label>
-    <?= $voice->TextVoice('third-text-field',['11', '7', '3'], 1, 3); ?>
+    <label for="color">Color:</label>
+    <?= $voice->TextVoice('color',['yellow', 'black', 'white', 'red', 'blue'], 1, 3); ?>
 
 </form>
-<script src="js/voicerec.js"></script>
+<script src="js/voiceinputs.js"></script>
 
 
 
@@ -50,10 +53,6 @@ The following versions of PHP are supported by this version.
 
 + PHP >= 5.6
 + HHVM
-
-## Development Requirements
-
-+ PHPUnit 5.7
 
 
 ## Author
