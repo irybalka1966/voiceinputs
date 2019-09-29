@@ -11,8 +11,8 @@ Voice recognition option works only for Chrome web-browser and SSL connection on
 
 If you wish to put inputs with voice recognition into your html form, 
 for example car brands with a possible choice of Toyota, Ferrari et c.,
-year with a strict choice between 2016, 2017, etc. and colors:
-
+year with a strict choice between 2016, 2017, etc. and colors. If you also wish, that after recognition completion on the first input
+it will be automaticly started on the next input:
 
 <?php
 require '...\vendor\autoload.php';
@@ -25,10 +25,10 @@ $voice = new VoiceInputs();
     <?=$voice->TextVoice('car-brand',['Toyota','Ferrari', 'BMW', 'Nissan'], 1);?>
 
     <label for="year">Year:</label>
-    <?= $voice->SelectVoice('year',['2016', '2017', '2018', '2019'], 0);?>
+    <?= $voice->SelectVoice('year',['2016', '2017', '2018', '2019'], 1);?>
 
     <label for="color">Color:</label>
-    <?= $voice->TextVoice('color',['yellow', 'black', 'white', 'red', 'blue'], 1); ?>
+    <?= $voice->TextVoice('color',['yellow', 'black', 'white', 'red', 'blue'], 0); ?>
 
 </form>
 <script src="js/voiceinputs.js"></script>

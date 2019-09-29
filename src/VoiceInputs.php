@@ -65,7 +65,7 @@ TEXTFIELD;
      *      set "0" - to do nothing
      * @return string selectVoice      
      */
-    public function SelectVoice($name, $wArr, $goNext ){   
+    public function SelectVoice($name, $wArr, $goNext = 0 ){   
         $this->inputCounter++;
         $wStr =  implode('","',$wArr);
         $wStr =  '"'.$wStr.'"';
