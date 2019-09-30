@@ -36,7 +36,8 @@ MIC;
      *      set "0" - to do nothing
      * @return string textVoice      
      */
-    public function TextVoice($name, $wArr, $goNext = 0 ){  
+    public function TextVoice(string $name='', array $wArr=[], int $goNext = 0, string $textVoice='' ): string
+    {  
         $this->inputCounter++;        
         $wStr =  implode('","',$wArr);
         $wStr =  '"'.$wStr.'"';
@@ -65,7 +66,8 @@ TEXTFIELD;
      *      set "0" - to do nothing
      * @return string selectVoice      
      */
-    public function SelectVoice($name, $wArr, $goNext = 0 ){   
+    public function SelectVoice(string $name='', array $wArr=[], int $goNext = 0, string $selectVoice=''  ): string
+      {   
         $this->inputCounter++;
         $wStr =  implode('","',$wArr);
         $wStr =  '"'.$wStr.'"';
