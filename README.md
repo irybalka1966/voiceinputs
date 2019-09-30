@@ -20,7 +20,7 @@ use irybalka1966\VoiceInputs\VoiceInputs;
 $voice = new VoiceInputs();
 ?>
 <link rel="stylesheet" href="/css/voiceinputs.css">
-<form  ...>
+<form>
     <label for="car-brand">Car brand:</label> 
     <?=$voice->TextVoice('car-brand',['Toyota','Ferrari', 'BMW', 'Nissan'], 1);?>
 
