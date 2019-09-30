@@ -14,14 +14,15 @@ for example car brands with a possible choice of Toyota, Ferrari et c.,
 year with a strict choice between 2016, 2017, etc. and colors. If you also wish, that after recognition completion on the first input
 it will be automaticly started on the next input:
 
-<?php
+<...?php
 require '...\vendor\autoload.php';
 
 use irybalka1966\VoiceInputs\VoiceInputs;
 
 $voice = new VoiceInputs();
-?>
+?...>
 
+...
 
     <label for="car-brand">Car brand:</label> 
     <?=$voice->TextVoice('car-brand',['Toyota','Ferrari', 'BMW', 'Nissan'], 1);?>
@@ -32,7 +33,8 @@ $voice = new VoiceInputs();
     <label for="color">Color:</label>
     <?= $voice->TextVoice('color',['yellow', 'black', 'white', 'red', 'blue'], 0); ?>
 
-</form>
+...
+
 <script src="js/voiceinputs.js"></script>
 
 
