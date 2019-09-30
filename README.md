@@ -16,10 +16,12 @@ it will be automaticly started on the next input:
 
 
 require '...\vendor\autoload.php';
+
 use irybalka1966\VoiceInputs\VoiceInputs;
+
 $voice = new VoiceInputs();
-....
-<link rel="stylesheet" href="/css/voiceinputs.css">
+?>
+
 <form>
     <label for="car-brand">Car brand:</label> 
     <?=$voice->TextVoice('car-brand',['Toyota','Ferrari', 'BMW', 'Nissan'], 1);?>
