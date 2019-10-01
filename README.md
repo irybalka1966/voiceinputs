@@ -4,7 +4,7 @@ This package allows you to build "text" and "select" html form inputs with "fill
 using Chrome webkitSpeechRecognition. 
 Here it is possible to automatic switch voice-recognition mode from input to input, in custom order 
 
-Voice recognition option works only for Chrome web-browser and SSL connection only
+Voice recognition option works <strong>for Chrome web-browser and SSL connection only</strong>
 
 
 ## Example of usage
