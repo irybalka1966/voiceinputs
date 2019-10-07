@@ -17,7 +17,7 @@ it will be automaticly started on the next input:
 <...?php
 require '...\vendor\autoload.php';
 
-use irybalka1966\VoiceInputs\VoiceInputs;
+use irybalka1966\voiceinputs\VoiceInputs;
 
 $voice = new VoiceInputs();
 ?...>
