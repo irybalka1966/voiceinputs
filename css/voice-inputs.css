@@ -1,0 +1,11 @@
+.voice-active {
+    fill: green;
+}
+
+.voice-text-input {
+    width: 300px;
+}
+
+.voice-text-button {
+    cursor: pointer;
+}
