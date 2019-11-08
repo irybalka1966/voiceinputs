@@ -12,38 +12,47 @@ Voice recognition option works <strong>for Chrome web-browser and SSL connection
 If you wish to put inputs with voice recognition into your html form, 
 for example car brands with a possible choice of Toyota, Ferrari et c.,
 year with a strict choice between 2016, 2017, etc. and colors. If you also wish, that after recognition completion on the first input
-it will be automaticly started on the next input:
+it will be automatically started on the next input:
 
-<...?php
+```php
+<?php
 require '...\vendor\autoload.php';
 
-use irybalka1966\voiceinputs\VoiceInputs;
+use irybalka1966\VoiceInputs\VoiceInputs;
 
 $voice = new VoiceInputs();
-?...>
+?>
+```
 
-...
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voice Input</title>
+    <link type="text/css" rel="stylesheet" href="css/voice-input.js">
+</head>
+<body>
+<label for="car-brand">Car brand:</label>
+<?= $voice->TextVoice('car-brand', ['Toyota', 'Ferrari', 'BMW', 'Nissan'], 1); ?>
 
-    <label for="car-brand">Car brand:</label> 
-    <?=$voice->TextVoice('car-brand',['Toyota','Ferrari', 'BMW', 'Nissan'], 1);?>
+<label for="year">Year:</label>
+<?= $voice->SelectVoice('year', ['2016', '2017', '2018', '2019'], 1); ?>
 
-    <label for="year">Year:</label>
-    <?= $voice->SelectVoice('year',['2016', '2017', '2018', '2019'], 1);?>
+<label for="color">Color:</label>
+<?= $voice->TextVoice('color', ['yellow', 'black', 'white', 'red', 'blue'], 0); ?>
 
-    <label for="color">Color:</label>
-    <?= $voice->TextVoice('color',['yellow', 'black', 'white', 'red', 'blue'], 0); ?>
-
-...
-
-<script src="js/voiceinputs.js"></script>
-
+<script src="js/voice-input.js"></script>
+</body>
+</html>
+```
 
 
 ## Installation
 
 Using [composer](http://www.getcompser.com):
 
-```bash
+```shell script
 $ composer require irybalka1966/VoiceInputs
 ```
 
@@ -78,7 +87,7 @@ copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
