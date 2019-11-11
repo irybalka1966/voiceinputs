@@ -25,7 +25,7 @@ MIC;
     /**
      * VoiceInputs constructor
      */
-    function __construct()
+    public function __construct()
     {
         $this->inputCounter = 0;
     }
@@ -43,7 +43,7 @@ MIC;
      *
      * @return string textVoice
      */
-    public function TextVoice(string $name = '', array $wArr = [], int $goNext = 0, string $textVoice = ''): string
+    public function TextVoice(array $wArr = [], int $goNext = 0, string $textVoice = ''): string
     {
         $this->inputCounter++;
         $wStr      = implode('","', $wArr);
