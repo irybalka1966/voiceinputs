@@ -57,7 +57,7 @@ MIC;
      * Place "select" html form input with "filling-from-voice" option
      *
      * @param string  name    - input name
-     * @param array   wArr    - array of values for choise
+     * @param array   wArr    - array of values to select
      * @param integer $goNext - after current recognition completion
      *      set "1" to start a new voice recognition on the next input with incremented id
      *      set "0" - to do nothing
@@ -87,7 +87,6 @@ SELECT;
     {$this->mic}
 </button>
 MICBUTTON;
-
         return $selectVoice;
     }
 }
