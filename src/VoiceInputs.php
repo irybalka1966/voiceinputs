@@ -34,7 +34,7 @@ MIC;
      * Place "text" html form input with "filling-from-voice" option
      *
      * @param string $name
-     * @param array   wArr    - array of values for choise
+     * @param array   wArr    - array of values to select
      * @param int $goNext - after current recognition completion
      *      set "1" to start a new voice recognition on the next input with incremented id
      *      set "0" - to do nothing
