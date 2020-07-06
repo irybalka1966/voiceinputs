@@ -1,7 +1,5 @@
 <?php
-
 namespace irybalka1966\VoiceInputs;
-
 class VoiceInputs
 {
     /**
